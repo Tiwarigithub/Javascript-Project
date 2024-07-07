@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width:450px;
+            height:auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color:cadetblue;
+        }
+        #menu-bar li{
+            display:inline-block;
+            padding: 15px 10px;
+            color:azure;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        img{
+            width:600px;
+            height:auto;
+
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        .sticky{
+            position:fixed;
+            top:0;
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="E:\F.S tutorial\Javascript\JS projects\Sticky Navbar\Nature.jpg" id="logo" alt="">
+
+    </div>
+    <nav id="menu-bar" >
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Me</h1>
+        <img src="E:\F.S tutorial\Javascript\JS projects\BackgroundChanger\Anuj.png">
+        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatibus
+             porro veritatis, accusamus temporibus illo ipsam ad dolor quo alias rem 
+             quibusdam dolorem et quos. Qui laborum iste culpa obcaecati explicabo, 
+             delectus totam voluptatum aut! Quas corrupti ipsam quasi repellendus repellat 
+             vero qui nam dignissimos ullam quaerat, quae error dolore et laudantium dicta 
+             molestias optio dolorem. Impedit, accusantium voluptate facilis reiciendis quae 
+             dolorum aut beatae nemo temporibus nobis a doloremque sit necessitatibus animi 
+             laboriosam modi architecto! Ratione omnis ullam quidem blanditiis, praesentium 
+             consequatur suscipit. Neque, ea ab voluptatum dolorum nostrum debitis recusandae, 
+             et quam sapiente qui, eius odio quasi vitae. Quo, ipsam vero perspiciatis a, 
+             necessitatibus accusamus aut ut impedit deleniti incidunt adipisci ducimus sint 
+             consectetur id quae saepe corrupti illo quaerat aliquam. Perspiciatis mollitia 
+             placeat natus libero a id! Reprehenderit explicabo incidunt provident quod hic 
+             enim molestiae quia, exercitationem nulla. Odit explicabo dicta vel iusto nobis 
+             in, fugit veniam asperiores similique laudantium ullam distinctio tempora perferendis, 
+             harum placeat reiciendis? Blanditiis officiis nihil sapiente ipsam dignissimos consequatur 
+             in aliquam commodi! Nobis eveniet quo vitae ab id aperiam, iusto cumque aspernatur vero temporibus 
+             deleniti quia hic nisi ad aliquam ut iste. Inventore facere culpa quisquam pariatur molestiae ea 
+             obcaecati rerum sit!</p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById("menu-bar");
+
+            if(window.pageYOffset >= 454){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky')
+            }
+        });
+    </script>
+    
+</body>
+</html>

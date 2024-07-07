@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin:0px;
+            padding:20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width:100px;
+            height:auto;
+            margin:0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        
+        }
+        .btn{
+            width:20px;
+            height:20px;
+            display:inline-block;
+            border:solid grey 2px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Me</h1>
+    <img src="E:\F.S tutorial\Javascript\JS projects\BackgroundChanger\Anuj.png">
+    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam nesciunt 
+       nemo animi dignissimos exercitationem eveniet odit fuga recusandae doloremque
+       dicta natus autem esse architecto numquam eligendi, unde voluptatem. Recusandae
+       molestias tempora in ad, laborum hic explicabo. Molestias, harum reiciendis
+       sunt excepturi vel, quibusdam quo aliquam velit at temporibus eligendi sequi
+       ullam et dolore culpa laboriosam ab veritatis ipsam pariatur corrupti repellendus 
+       libero quae fugiat odio! Vel nobis ut facere, quod esse voluptas laudantium animi 
+       temporibus libero corrupti dolor eum, exercitationem, dolore voluptates possimus 
+       laboriosam commodi. Harum nostrum accusantium ea doloribus amet. Rem, quis pariatur 
+       qui suscipit quaerat soluta itaque amet praesentium culpa odio, ducimus repellendus? 
+       Illo cumque vero nihil. Vel voluptatem neque quos quisquam ratione nulla. Maxime nisi 
+       itaque deleniti eaque sed quos ad. Officia, nostrum error. Aperiam quas inventore ex 
+       quae exercitationem adipisci ipsam, necessitatibus eligendi fugiat qui cumque sint, 
+        doloribus in iure nam at accusamus deserunt. Omnis provident ducimus facere asperiores 
+       est, explicabo ad cum laborum labore tempora? Ratione, harum accusamus minus facilis 
+       pariatur repudiandae reprehenderit accusantium incidunt repellendus nemo molestiae. 
+        Culpa sed eveniet ipsa mollitia soluta deleniti eum sunt sint molestias possimus, 
+        officiis ipsum nostrum veritatis atque? Nulla cupiditate commodi libero quod eaque 
+        enim atque doloremque mollitia, minima rem illum doloribus voluptatem vel? Ipsum ea 
+        eligendi dolores asperiores. Possimus, cum sapiente. Consequuntur id molestiae dolores 
+        eveniet nostrum porro nemo accusantium neque sed delectus ratione nisi consequatur odit, 
+        tenetur veniam nihil omnis quidem repellendus. Veritatis quo consequatur nam in.
+    </p>
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByclassName("text");
+            if(color =="#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
